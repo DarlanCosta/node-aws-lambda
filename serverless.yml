@@ -17,16 +17,16 @@ functions:
   optimize:
     handler: optimize.handle
     environment:
-      bucket: rocketnodeserverless
+      bucket: lambdatestforce2
     events:
       - s3:
-          bucket: rocketnodeserverless
+          bucket: lambdatestforce2
           event: s3:ObjectCreated:*
           rules:
             - prefix: uploads/
             - suffix: .jpg
       - s3:
-          bucket: rocketnodeserverless
+          bucket: lambdatestforce2
           event: s3:ObjectCreated:*
           rules:
             - prefix: uploads/
